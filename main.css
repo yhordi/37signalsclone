@@ -95,7 +95,9 @@ li a:hover{
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	max-width: 1000;
+	max-width: 1000px;
+	min-width: 1000px;
+	height: 214px;
 }
 
 #date {
@@ -154,7 +156,12 @@ div div h5{
 }
 
 #images{
-	display: block;
+	text-align: center;
+	z-index: -1;
+	position: absolute;
+	margin-right: inherit;
+	margin-left: inherit;
+	width: 1000px;
 }
 
 .Gradimage {
@@ -176,12 +183,15 @@ div div h5{
 #basecamp{
 	margin: 15px 20px 5px 0;
 	}
+
 #highrise{
 	margin: 15px 20px 5px 20px;
 }
+
 #campfire{
 	margin: 15px 0 5px 20px;
 }
+
 .lineOne{
 	text-decoration: underline;
 	font-size: 21px;
@@ -192,6 +202,7 @@ div div h5{
 	margin-top: 3px
 
 }
+
 .lineTwo{
 	margin: 5px 0 10px;
 	font-size: 14px;
@@ -203,6 +214,7 @@ div div h5{
 	display: block;
 	padding-top: 0;
 }
+
 .lineThree{
 	color: #222;
 font-size: 14px;
@@ -219,4 +231,49 @@ margin-top: 40px;
 	
 h4{
 	padding-top: 12px;
+}
+
+.blue{
+	color: #336699;
+	text-decoration: underline;
+}
+
+.popup{
+	color: black;
+	width: 1000px;
+	margin-right: 250px;
+	width: 1000px;
+	height: 151px;
+
+}
+
+.popup h1{
+	letter-spacing: -1px;
+	font-size: 46px;
+
+}
+
+.popup p{
+	padding: 0;
+}
+
+#basecampArrow {
+	margin-left: 325px;
+	margin-top: -10px;
+	float: left;
+	z-index: 1;
+}
+
+#highriseArrow {
+	margin-left: 175px;
+	margin-top: -10px;
+
+	z-index: 1;
+}
+
+#campfireArrow{
+	margin-left: 300px;
+	margin-top: -10px;
+
+	z-index: 1;
 }

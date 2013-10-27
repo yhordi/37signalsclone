@@ -2,46 +2,96 @@
 
 <html lang="en">
 	<head>
+		
 		<link type="text/css" rel="stylesheet" href="main.css"/>	
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+		
+		
+		<script src="application.js"></script>
+		
 		<title>37signals: Web-based collaboration apps for small business</title>
+
 	</head>
 	<body>
+			
 			<div id="navcontainer">
+				
 				<a id="date">Happy *date*</a>
+				
 				<ul id="navlist">
 					<li><a href="http://37signals.com/svn">Company Blog</a></li>
 					<li><a href="http://37signals.com/about">Our story</a></li>
 					<li><a href="https://twitter.com/37signals">Follow us on Twitter</a></li>
 					<li><a href="http://status.37signals.com/">System status</a></li>
+					
 					<li id="signIn"><a id="signIn" href ="https://launchpad.37signals.com/signin">Sign in</a></li>
+				
 				</ul>
+			
 			</div>
+		
 		<div id= "main">
-			<img id= "logo" src="logo-37s-large.png" />
+			
+			<img id= "logo" src="Images/logo-37s-large.png" />
+			
 			<div id= "headers">
+				
 				<h1>Making collaboration productive and enjoyable for people every day.</h1>
-				<h4>Frustration-free web-based apps for collaboration, sharing information, and making decisions.<h4>
+				
+				<h4>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
+			
 			</div>
+			<div class="popup" id="bcpop">
+							
+				<H1><SPAN class="blue">Basecamp</SPAN> is the project management tool you wish you had on your last project.</H1>
+							
+				<P>"Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients in the modern way."</P>
+
+				<img id="basecampArrow"src="Images/arrow-left.png"/>
+
+			</div>
+
+			<div class="popup" id="hrpop">
+
+				<H1> <span class="blue">Highrise</span> remembers the important things about people you&#39;d normally forget.</H1>
+
+				<P>"Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</P>
+
+				<img id="highriseArrow"src="Images/arrow-left.png"/>
+			</div>
+
+			<div class="popup" id="cfpop">
+
+				<H1> From near or far, <span class="blue">Campfire</span> helps teams work together over the web in real-time.</H1>
+
+				<P>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.</P>
+
+				<img id="campfireArrow"src="Images/arrow-right.png"/>
+			</div>
+
 			<div id= "images">
 				
-					<a class= "Gradimage" id="basecamp" href= "https://basecamp.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.2.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=135634609"><img src="logo-bc.png"/> 
-					<h4> <span class= "lineOne">Basecamp</span> </h4>
-					 <h4><span class= "lineTwo">Manage Projects</span> </h4>
-					 <h6><span class= "lineThree">Used by millions for project management.</span></h6>
+					<a class= "Gradimage" id="basecamp" href= "https://basecamp.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.2.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=135634609"><img src="Images/logo-bc.png"/> 
+						
+						
+						<h4> <span class= "lineOne">Basecamp</span> </h4>
+					 	<h4><span class= "lineTwo">Manage Projects</span> </h4>
+					 	<h6><span class= "lineThree">Used by millions for project management.</span></h6>
 					</a>			
 					
-					<a class= "Gradimage" id="highrise" href= "https://highrisehq.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.14.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=137132336"><img src="logo-hr.png"/>
-					<h4> <span class= "lineOne">Highrise</span> </h4>
-					 <h4><span class= "lineTwo">Manage Contracts</span> </h4>
-					 <h6><span class= "lineThree">Know the people you do business with.</span></h6>
+					<a class= "Gradimage" id="highrise" href= "https://highrisehq.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.14.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=137132336"><img src="Images/logo-hr.png"/>
+						<h4> <span class= "lineOne">Highrise</span> </h4>
+					 	<h4><span class= "lineTwo">Manage Contracts</span> </h4>
+					 	<h6><span class= "lineThree">Know the people you do business with.</span></h6>
 					</a>					
 					
-					<a class= "Gradimage" id="campfire"href= "https://campfirenow.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.20.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=139876915"><img src="logo-cf.png"/>
-					<h4> <span class= "lineOne">Campfire</span> </h4>
-					 <h4><span class= "lineTwo">Work in Real-Time</span> </h4>
-					 <h6><span class= "lineThree">Group chat rooms for your business.</span></h6>
+					<a class= "Gradimage" id="campfire"href= "https://campfirenow.com/?source=37signals+home&__utma=1.701792575.1381946485.1381953869.1381953869.4&__utmb=1.20.10.1381953869&__utmc=1&__utmx=-&__utmz=1.1381946485.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=139876915"><img src="Images/logo-cf.png"/>
+						<h4> <span class= "lineOne">Campfire</span> </h4>
+					 	<h4><span class= "lineTwo">Work in Real-Time</span> </h4>
+					 	<h6><span class= "lineThree">Group chat rooms for your business.</span></h6>
 					</a>	
-					<div id="asterisks"> <img src="img-hr.png"></div>
+					<div id="asterisks"> <img src="Images/img-hr.png"></div>
 			</div>
 		</div>
 	</body>
